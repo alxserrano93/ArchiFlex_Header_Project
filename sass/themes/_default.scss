@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+html{
+    font-family: var.$primary-font;
+}
+ 
+body{
+    background-color: var.$bg-color;
+    font-size: 18px;
+    color: var.$color-black;
+  }

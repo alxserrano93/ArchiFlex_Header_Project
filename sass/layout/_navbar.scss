@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+.main-menu{
+    width: 692px;
+    margin-right: 300px;
+    margin-left: 300px;
+    align-items: center;
+    ul{
+        @include mix.reset-list();
+        gap: 56px;
+    }
+
+    a{
+        text-decoration: none;
+        font-size: 14px;
+        color: var.$color-black;
+        font-weight: 200;
+        &:hover{
+            font-weight: 700;
+        }
+
+    }
+    
+    .active{
+        font-weight: 700;
+    }
+
+}

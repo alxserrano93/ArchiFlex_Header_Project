@@ -1,0 +1,16 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+.main__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    .header__logo{
+        
+        img{
+            width: 167px;
+            height: 54px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+.numbers{
+    display: flex;
+    gap: 90px;
+    margin-top: 220px;
+
+    &__number{
+        font-size: 64px;
+        font-weight: 500;
+    }
+
+    &__descr{
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 200;
+        max-width: 100px;
+    }
+
+    &::before{
+        content: "";
+        background-color: #DEDAD5;
+        position: absolute;
+        width: 480px;
+        height: 192px;
+        bottom: -4%;
+        right: 40%;
+        z-index: -1;
+        opacity: 25%;
+    }   
+}
